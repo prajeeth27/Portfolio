@@ -1,0 +1,113 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0e0b1b, #928dab); /* Same gradient as in provided file */
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Experience Section */
+.experience {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);/* Dark transparent background */
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+/* Experience Title */
+.experience-title {
+    font-size: 36px;
+    color: #ff6b6b; /* Light purple for title */
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Timeline Customization */
+.vertical-timeline-element--education,
+.vertical-timeline-element--work {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin-bottom: 30px;
+    visibility: visible !important; /* Ensure the elements are always visible */
+}
+
+/* Text Color for Timeline */
+.vertical-timeline-element-title,
+.vertical-timeline-element-subtitle,
+.vertical-timeline-element p {
+    color: black !important; /* Set text color to black */
+}
+
+/* Brighter Date Styling */
+.vertical-timeline-element-date {
+    font-size: 18px;
+    color: #ff6b6b; /* Light purple for date */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Timeline Line Customization */
+.vertical-timeline-line {
+    background-color: #ff6b6b; /* Light purple timeline line */
+}
+
+/* Timeline Icon Styling */
+.vertical-timeline-element-icon {
+    background: #ff6b6b; /* Light purple icon */
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Remove any transition or animation on hover for titles */
+.vertical-timeline-element-title,
+.vertical-timeline-element-subtitle {
+    transition: none !important;
+    animation: none !important;
+}
+
+/* Hover Effects for Icons and Titles */
+.vertical-timeline-element-icon:hover {
+    background: #f30808; /* Dark red when hovered */
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out, background 0.3s ease;
+}
+
+.vertical-timeline-element-title:hover,
+.vertical-timeline-element-subtitle:hover {
+    color: #ff6b6b; /* Light purple hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .experience {
+        padding: 20px;
+    }
+
+    .experience-title {
+        font-size: 28px;
+    }
+
+    .vertical-timeline-element-title {
+        font-size: 20px;
+    }
+
+    .vertical-timeline-element-subtitle {
+        font-size: 16px;
+    }
+
+    .vertical-timeline-element p {
+        font-size: 14px;
+    }
+}

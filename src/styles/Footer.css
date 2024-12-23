@@ -1,0 +1,57 @@
+/* Footer Container */
+.footer {
+    width: 100%;
+    height: 75px; /* Thinner footer */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    position:static; /* Fixed at the bottom */
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(135deg, #1f1c2c, #4a465c);/* Optional shadow for separation */
+  }
+  
+  /* Social Media Section */
+  .socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Space between icons */
+  }
+  
+  /* Icon Styles */
+  .socialMedia svg {
+    font-size: 30px; /* Icon size */
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .socialMedia svg:hover {
+    color: #ff9800; /* Change color on hover */
+    transform: scale(1.2); /* Enlarge on hover */
+  }
+  
+  /* Footer Text */
+  .footer p {
+    margin: 5px 0;
+    font-size: 14px; /* Smaller text for the footer */
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 600px) {
+    .socialMedia svg {
+      font-size: 25px; /* Smaller icons on mobile */
+    }
+  
+    .footer p {
+      font-size: 12px; /* Smaller footer text on mobile */
+    }
+  }
+  

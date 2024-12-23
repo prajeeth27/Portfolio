@@ -1,0 +1,224 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Home Section */
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.home h1 {
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: linear-gradient(135deg, #f80202, #361f7c, #74c0fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+  animation: glowText 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowText {
+  0% {
+      text-shadow: 0 0 10px #ff6b6b, 0 0 20px #845ef7, 0 0 30px #74c0fc;
+  }
+  100% {
+      text-shadow: 0 0 20px #ff6b6b, 0 0 40px #845ef7, 0 0 60px #74c0fc;
+  }
+}
+
+/* About Section */
+.about {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.about h2 {
+  font-size: 36px;
+  color: #ff6b6b;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  color: #ddd;
+  line-height: 1.8;
+}
+
+/* Profile Image */
+.profile-img {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 20px auto;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff6b6b, #845ef7, #5c7cfa, #74c0fc);
+  background-size: 300% 300%;
+  animation: gradient-animation 6s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+.profile-img img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+}
+
+@keyframes gradient-animation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+/* Tech Enthusiast Section */
+.tech-enthusiast {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  margin-top: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tech-enthusiast h2 {
+  font-size: 36px;
+  color: #ff6b6b;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.tech-enthusiast p {
+  font-size: 18px;
+  color: #ddd;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+/* Skills Section */
+.skills {
+  margin-top: 50px;
+}
+
+.skills h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #f30808;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.item {
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+}
+
+.item .front,
+.item .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  transition: transform 0.6s;
+}
+
+.item .front {
+  background: linear-gradient(135deg, #845ef7, #5c7cfa);
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.item .back {
+  background: linear-gradient(135deg, #5c7cfa, #845ef7);
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.item:hover .front {
+  transform: rotateY(180deg);
+}
+
+.item:hover .back {
+  transform: rotateY(0deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home h1 {
+      font-size: 32px;
+  }
+
+  .profile-img {
+      width: 140px;
+      height: 140px;
+  }
+
+  .profile-img img {
+      width: 120px;
+      height: 120px;
+  }
+
+  .skills {
+      padding: 20px;
+  }
+
+  .skills .item {
+      width: calc(50% - 20px);
+      height: 200px;
+  }
+}
