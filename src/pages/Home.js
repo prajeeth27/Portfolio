@@ -2,6 +2,7 @@ import React from 'react';
 import MailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import "../styles/Home.css";
 import Prajeeth from "../assets/Prajeeth.jpg";
 
@@ -18,7 +19,7 @@ function Home() {
     <div className="home">
       {/* About Section */}
       <div className="about">
-        <h2>Hi, my name is Prajeeth</h2>
+        <h2>Hi, I Am Prajeeth</h2>
 
         {/* Profile Image */}
         <div className="profile-img">
@@ -35,14 +36,17 @@ function Home() {
           </p>
           {/* Social Links */}
           <div className="socialLinks">
-            <a href="https://github.com/prajeeth27" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/prajeeth27" target="_blank" >
               <GitHubIcon />
             </a>
-            <a href="https://www.linkedin.com/in/prajeethm" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/prajeethm" target="_blank" >
               <LinkedInIcon />
             </a>
             <a href="mailto:prajeethmarimuthu27@gmail.com">
               <MailIcon />
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=7904250260" target="_blank" >
+            <WhatsAppIcon/>
             </a>
           </div>
         </div>

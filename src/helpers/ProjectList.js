@@ -10,7 +10,7 @@ export const ProjectList = [
     name: "KPL Steels Website",
     image: Proj1,
     skills: "Html,CSS,JavaScript,Nodejs,Mongodb",
-    github: "https://github.com/yourusername/kpl-steels-website", // GitHub link
+    github: "https://github.com/prajeeth27/FULL-STACK-WEBSITE-FOR-KPL-STEELS.github.io.git", // GitHub link
     description: "A website for KPL Steels with basic information and a contact form.",
   },
   {
@@ -31,21 +31,21 @@ export const ProjectList = [
     name: "Mental Health Companion",
     image: Proj4,
     skills: "MachineLearning,NeuralNetworks,Python,Flask",
-    github: "https://github.com/yourusername/mental-health-companion", // GitHub link
+    github: "https://github.com/prajeeth27/Mental-Health_Prediction.git", // GitHub link
     description: "A mental health companion app that uses machine learning for stress detection.",
   },
   {
     name: "Socket Chat Application",
     image: Proj5,
     skills: "Java,Javafx,Socket Programming,TCP/UDP,Client-Server Architecture",
-    github: "https://github.com/yourusername/socket-chat-application", // GitHub link
+    github: "https://github.com/prajeeth27/JavaSocketApp.git", // GitHub link
     description: "A real-time chat application using socket programming in Java.",
   },
   {
     name: "Smart Office Management",
     image: Proj6,
     skills: "Java,Javafx,Mysql",
-    github: "https://github.com/yourusername/smart-office-management", // GitHub link
+    github: "https://github.com/prajeeth27/SmartOfficeManagement.git", // GitHub link
     description: "An office management system for tracking employees and tasks.",
   },
 ];

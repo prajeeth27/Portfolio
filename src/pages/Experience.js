@@ -17,7 +17,8 @@ function Experience() {
           iconStyle={{ background: "#ff6b6b", color: "#fff" }}
           icon={<SchoolIcon />}
         >
-          <h3 className="vertical-timeline-element-title">VMJ Higher Secondary School,Madurai</h3>
+          <h3 className="vertical-timeline-element-title">VMJ Higher Secondary School</h3>
+          <h4 className="vertical-timeline-element-subtitle">Madurai,India</h4>
           <p>ISC XII</p>
           <p>Grade: 98.8%</p>
         </VerticalTimelineElement>
@@ -28,7 +29,8 @@ function Experience() {
           iconStyle={{ background: "#ff6b6b", color: "#fff" }}
           icon={<SchoolIcon />}
         >
-          <h3 className="vertical-timeline-element-title">PSG College Of Technology,Coimbatore</h3>
+          <h3 className="vertical-timeline-element-title">PSG College Of Technology</h3>
+          <h4 className="vertical-timeline-element-subtitle">Coimbatore,India</h4>
           <h4 className="vertical-timeline-element-subtitle">Bachelor's Degree</h4>
           <p>Computer Science And Engineering</p>
           <p>Grade:8.55</p>
@@ -37,7 +39,7 @@ function Experience() {
         {/* Work Experience Timeline */}
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2018 - 2020"
+          date="2024 - 2024"
           iconStyle={{ background: "#ff6b6b", color: "#fff" }}
           icon={<WorkIcon />}
         >
@@ -49,7 +51,7 @@ function Experience() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2020 - present"
+          date="2024 - Present"
           iconStyle={{ background: "#ff6b6b", color: "#fff" }}
           icon={<WorkIcon />}
         >
